@@ -24,7 +24,7 @@ const Page = () => {
         <Contact />
         {/* Contact Ends */}
         {/* Blog Starts */}
-        <Blog />
+        // <Blog />
         {/* Blog Ends */}
       </div>
       <Revealer />

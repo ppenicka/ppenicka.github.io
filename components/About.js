@@ -8,21 +8,20 @@ const bio = [
   {
     id: 11,
     data: [
-      { id: 1, type: "First Name", value: "Steve" },
-      { id: 2, type: "Last Name", value: "Milner" },
-      { id: 3, type: "Age", value: "27 Years" },
-      { id: 4, type: "Nationality", value: "Tunisian" },
+      { id: 1, type: "First Name", value: "Petr" },
+      { id: 2, type: "Last Name", value: "Penicka" },
+      { id: 3, type: "Age", value: "39 Years" },
+      { id: 4, type: "Nationality", value: "Czech" },
       { id: 5, type: "Freelance", value: "Available" },
     ],
   },
   {
     id: 12,
     data: [
-      { id: 6, type: "Address", value: "Tunis" },
-      { id: 7, type: "Phone", value: "+216 21 184 010" },
-      { id: 8, type: "Email", value: "demo@demo.com" },
-      { id: 9, type: "Skype", value: "steve.milner" },
-      { id: 10, type: "Langages", value: "French, English" },
+      { id: 6, type: "Address", value: "Czech Republic" },
+      { id: 8, type: "Email", value: "petr.penicka@gmail.com" },
+      { id: 9, type: "LinkedIn", value: "linkedin.com/in/petr-penicka" },
+      { id: 10, type: "Langages", value: "English, German, Spanish, Czech" },
     ],
   },
 ];
@@ -30,13 +29,14 @@ const bio = [
 const counters = [
   {
     id: 1,
-    title: 'years of <span className="block">experience</span>',
-    value: "12",
+    title: 'years of <span className="block">tech industry experience</span>',
+    value: "15",
   },
   {
     id: 2,
-    title: 'completed <span className="block">projects</span>',
-    value: "97",
+    title:
+      'years of <span className="block">frontend engineering experience</span>',
+    value: "5",
   },
   {
     id: 3,
@@ -95,7 +95,7 @@ const educations = [
 ];
 
 const skills = [
-  { id: 1, name: "html", value: "25" },
+  { id: 1, name: "html" },
   { id: 2, name: "javascript", value: "89" },
   { id: 3, name: "css", value: "70" },
   { id: 4, name: "php", value: "66" },
@@ -122,7 +122,7 @@ const About = () => {
             {/* Personal Informations Starts */}
             <div className="xl:basis-1/2 lg:basis-5/12 down-lg:basis-full">
               <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-22 text-white font-semibold">
-                personal infos
+                personal info
               </h3>
               <img
                 className="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
