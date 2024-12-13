@@ -9,6 +9,7 @@ import TunisState from "@/context/context";
 import TunisCss from "@/layouts/TunisCss";
 import "@css/styleswitcher.css";
 import { Open_Sans, Poppins } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
       >
         <head>
           <TunisCss />
+          <GoogleTagManager gtmId="G-43GXZ5Y6F3" />
         </head>
         <body
           className={`${fontFamily} font-Poppins text-fs-16 font-medium leading-lh-1.6`}

@@ -41,10 +41,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_gsps4gw", // service id
-          "template_evezi69", // template id
+          "service_hoiwp0d", // service id
+          "template_7fhngvd", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "UMi_Y4bz4Yc84lxK4" // public api
         )
         .then(
           (response) => {
@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
           <div className="flex down-lg:flex-col">
             {/* Contact Details Starts */}
-            <div className="w-1/3 down-lg:w-full px-25 down-sm:px-4">
+            <div className="w-1/3 down-lg:w-full px-25 down-sm:px-4 ">
               <h3 className="text-fs-26 xs:text-fs-21 mb-16 font-semibold uppercase">
                 Let's talk?
               </h3>
