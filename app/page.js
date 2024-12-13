@@ -12,7 +12,10 @@ const Page = () => {
       {/* Main Content Starts */}
       <div className="w-full h-full pages overflow-hidden">
         {/* Home Starts */}
-        <Home />
+        <Home
+          authorImage={"assets/img/ppenicka_desktop.jpg"}
+          authorImageMobile={"assets/img/ppenicka_mobile.jpg"}
+        />
         {/* Home Ends */}
         {/* About Starts */}
         <About />
