@@ -10,18 +10,17 @@ const bio = [
     data: [
       { id: 1, type: "First Name", value: "Petr" },
       { id: 2, type: "Last Name", value: "Penicka" },
-      { id: 3, type: "Age", value: "39 Years" },
-      { id: 4, type: "Nationality", value: "Czech" },
-      { id: 5, type: "Freelance", value: "Available" },
+      { id: 3, type: "Nationality", value: "Czech" },
+      { id: 4, type: "Langages", value: "English, German, Spanish, Czech" },
     ],
   },
   {
     id: 12,
     data: [
-      { id: 6, type: "Address", value: "Czech Republic" },
-      { id: 8, type: "Email", value: "petr.penicka@gmail.com" },
-      { id: 9, type: "LinkedIn", value: "linkedin.com/in/petr-penicka" },
-      { id: 10, type: "Langages", value: "English, German, Spanish, Czech" },
+      { id: 5, type: "Email", value: "petr.penicka@gmail.com" },
+      { id: 6, type: "LinkedIn", value: "linkedin.com/in/petr-penicka" },
+      { id: 7, type: "GitHub", value: "github.com/ppenicka" },
+      { id: 8, type: "Availability", value: "open to new clients" },
     ],
   },
 ];
@@ -38,71 +37,97 @@ const counters = [
       'years of <span className="block">frontend engineering experience</span>',
     value: "5",
   },
-  {
-    id: 3,
-    title: 'happy <span className="block">customers</span>',
-    value: "81",
-  },
-  { id: 4, title: 'awards <span className="block">won</span>', value: "53" },
 ];
 
 const experiences = [
   {
     id: 1,
-    date: "2018 - Present",
-    title: "web developer",
-    company: "envato",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2024 - Present",
+    title: "Senior Frontend Engineer",
+    company: "Slash.digital",
+    desc: "As a Senior Frontend Engineer at Slash.Digital, I'm developing high-exposure marketing websites and web applications that support clients' marketing campaigns and have significant impact on the growth of their business.",
   },
   {
     id: 2,
-    date: "2013 - 2018",
-    title: "UI/UX Designer",
-    company: "Themeforest",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2021 - 2024",
+    title: "Frontend Engineer",
+    company: "Glovo",
+    desc: "Worked on projects including UI for the company's billing and invoicing system, UI for configuration of payment gateways and payment methods, CAPTCHAs, phone verification, 2-factor authentication, UI for configuring partner payout settings, modularization and migration of web apps to monorepo architecture. I had also led the migration of courier registration website from WordPress to a custom solution based on Nuxt.js and Prismic.",
   },
   {
     id: 3,
-    date: "2005 - 2013",
-    title: "consultant",
-    company: "Videohive",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2020 - 2021",
+    title: "Frontend Developer",
+    company: "ManoMano",
+    desc: "Implemented redesign of the main product page (with traffic over 1M views per day), redesign of the main navigation menu, customisation of the UI for professional users, and migration of the codebase to TypeScript.",
+  },
+  {
+    id: 4,
+    date: "2016 - 2019",
+    title: "Program Manager",
+    company: "Red Hat",
+    desc: "Managed the planning, development and delivery of 20+ releases of various Red Hat products.",
+  },
+  {
+    id: 5,
+    date: "2014 - 2015",
+    title: "Documentation Program Manager",
+    company: "Red Hat",
+    desc: "Managed a team of technical writers responsible for technical documentation of Red Hat products.",
+  },
+  {
+    id: 6,
+    date: "2012 - 2014",
+    title: "Technical Writer",
+    company: "Red Hat",
+    desc: "Authored and maintained technical documentation of Red Hat products.",
+  },
+  {
+    id: 7,
+    date: "2008 - 2012",
+    title: "Technical Writer",
+    company: "Kentico Software",
+    desc: "Authored and maintained technical product documentation of Kentico CMS.",
   },
 ];
 
 const educations = [
   {
     id: 1,
-    date: "2015",
-    title: "Engineer Degree",
-    unv: "Oxford University",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2020",
+    title: "Bootcamp",
+    unv: "Codeworks",
+    desc: "Intensive software engineering bootcamp focused on full-stack JavaScript web development.",
   },
   {
     id: 2,
-    date: "2012",
-    title: "Master Degree",
-    unv: "Kiev University",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2013",
+    title: "Master's Degree",
+    unv: "Masaryk University",
+    desc: "Master's degree in Applied Informatics.",
   },
   {
     id: 3,
     date: "2009",
-    title: "Bachelor Degree",
-    unv: "Tunis High School",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    title: "Bachelor's Degree",
+    unv: "Masaryk University",
+    desc: "Bachelor's degree in Applied Informatics.",
   },
 ];
 
 const skills = [
-  { id: 1, name: "html" },
-  { id: 2, name: "javascript", value: "89" },
-  { id: 3, name: "css", value: "70" },
-  { id: 4, name: "php", value: "66" },
-  { id: 5, name: "wordpress", value: "95" },
-  { id: 6, name: "jquery", value: "50" },
-  { id: 7, name: "angular", value: "65" },
-  { id: 8, name: "react", value: "45" },
+  { id: 1, name: "HTML", icon: "html" },
+  { id: 2, name: "CSS", icon: "css" },
+  { id: 3, name: "JavaScript", icon: "js" },
+  { id: 4, name: "TypeScript", icon: "ts" },
+  { id: 5, name: "React", icon: "react" },
+  { id: 6, name: "Next.js", icon: "next" },
+  { id: 7, name: "Vue.js", icon: "vue" },
+  { id: 8, name: "Nuxt.js", icon: "nuxt" },
+  { id: 9, name: "Node.js", icon: "node" },
+  { id: 10, name: "WordPress", icon: "wp" },
+  { id: 11, name: "Tailwind", icon: "tailwind" },
+  { id: 12, name: "SaSS", icon: "sass" },
 ];
 
 const About = () => {
@@ -148,7 +173,7 @@ const About = () => {
               </div>
               <a
                 className="button group mt-30 overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
-                href="#"
+                href="https://raw.githubusercontent.com/ppenicka/cv/74dd9e59e80bb3f98f8ecfad27dc016cf9627fd3/cv-penicka.pdf"
               >
                 <span
                   className={`relative z-20 text-${
@@ -195,7 +220,7 @@ const About = () => {
             } mx-auto max-w-40prcent mt-70 mb-55`}
           />
           <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
-            my skills
+            Technologies I work with
           </h3>
           {/* Skills Starts */}
           <div className="flex w-full flex-wrap">
@@ -205,17 +230,18 @@ const About = () => {
                 key={skill.id}
               >
                 <div
-                  className={`c100 p${skill.value} float-none mx-auto ${
+                  className={`c100 p${
+                    skill.value
+                  } float-none mx-auto flex flex-col ${
                     dark ? "bg-black-3" : "bg-light-grey after:!bg-white"
                   }`}
                 >
-                  <span className={dark ? "" : "!text-black-6"}>
-                    {skill.value}%
-                  </span>
-                  <div className="slice">
-                    <div className="bar" />
-                    <div className="fill" />
-                  </div>
+                  <img
+                    className="relative z-10 mx-auto my-auto"
+                    width="56"
+                    src={"assets/img/tech/" + skill.icon + ".svg"}
+                    alt={skill.name}
+                  />
                 </div>
                 <h6 className="uppercase font-Open-sans text-center mt-24 xs:mt-8">
                   {skill.name}

@@ -6,10 +6,12 @@ import { useContext, useState } from "react";
 import SectionTitle from "./SectionTitle";
 
 const socials = [
-  { id: 1, icon: "fa fa-facebook", link: "#" },
-  { id: 2, icon: "fa fa-twitter", link: "#" },
-  { id: 3, icon: "fa fa-youtube", link: "#" },
-  { id: 4, icon: "fa fa-dribbble", link: "#" },
+  {
+    id: 1,
+    icon: "fa fa-linkedin",
+    link: "https://www.linkedin.com/in/petr-penicka",
+  },
+  { id: 2, icon: "fa fa-github", link: "https://github.com/ppenicka/" },
 ];
 
 const Contact = () => {
@@ -48,14 +50,7 @@ const Contact = () => {
           (response) => {
             setError(false);
             clearError();
-            setMailData({
-              name: "",
-              email: "",
-              message: "",
-              phone: "",
-              subject: "",
-              template: "tunis tailwind react",
-            });
+            setMailData(mailData);
           },
           (err) => {
             console.log(err.text);
@@ -84,27 +79,21 @@ const Contact = () => {
             {/* Contact Details Starts */}
             <div className="w-1/3 down-lg:w-full px-16 xs:px-0">
               <h3 className="text-fs-26 xs:text-fs-21 mb-16 font-semibold uppercase">
-                don't be shy !
+                Let's talk?
               </h3>
               <p className="mb-16 font-Open-sans text-fs-15 xs:text-fs-14">
-                Feel free to get in touch with me. I am always open to
-                discussing new projects, creative ideas or opportunities to be
-                part of your visions.
+                I'm always open to discussing new projects, creative ideas and
+                business opportunities. Feel free to get in touch with me throuh
+                the channels below or the form on the right.
               </p>
               <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
                 <i className="fa fa-envelope-open absolute left-0 top-10 text-fs-33 text-accent" />
                 <span className="block opacity-80 uppercase font-normal">
                   mail me
                 </span>
-                steve@mail.com
+                petr.penicka@gmail.com
               </div>
-              <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
-                <i className="fa fa-phone-square absolute left-0 top-10 text-fs-39 text-accent" />
-                <span className="block opacity-80 uppercase font-normal">
-                  call me
-                </span>
-                +216 21 184 010
-              </div>
+
               <ul className="-ml-5 pt-4 mb-48">
                 {socials.map((social) => (
                   <li key={social.id} className="inline-block">
@@ -179,7 +168,7 @@ const Contact = () => {
                       name="subject"
                       onChange={(e) => onChange(e)}
                       value={subject}
-                      placeholder="YOUR SUBJECT"
+                      placeholder="MESSAGE SUBJECT"
                     />
                   </div>
                   <div className="w-full px-16 xs:px-0">

@@ -8,7 +8,7 @@ const Header = () => {
     { id: 2, title: "About", href: "about", icon: "fa fa-user" },
     { id: 3, title: "Portfolio", href: "portfolio", icon: "fa fa-briefcase" },
     { id: 4, title: "Contact", href: "contact", icon: "fa fa-envelope-open" },
-    { id: 5, title: "Blog", href: "blog", icon: "fa fa-comments" },
+    // { id: 5, title: "Blog", href: "blog", icon: "fa fa-comments" },
   ];
   const { nav, changeNav, dark } = useContext(TunisContext);
 
