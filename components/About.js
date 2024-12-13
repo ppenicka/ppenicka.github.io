@@ -145,15 +145,11 @@ const About = () => {
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
           <div className="flex flex-row down-lg:flex-col">
             {/* Personal Informations Starts */}
-            <div className="xl:basis-1/2 lg:basis-5/12 down-lg:basis-full">
-              <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-22 text-white font-semibold">
+            <div className="xl:basis-2/3  down-lg:basis-full">
+              <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-22  text-white font-semibold">
                 personal info
               </h3>
-              <img
-                className="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
-                src="assets/img/dark-img-mobile.jpg"
-                alt=""
-              />
+
               <div className="flex justify-between xs:justify-start font-Open-sans">
                 {bio.map((item) => (
                   <div
@@ -172,7 +168,7 @@ const About = () => {
                 ))}
               </div>
               <a
-                className="button group mt-30 overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
+                className="button group mt-35  overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
                 href="https://raw.githubusercontent.com/ppenicka/cv/74dd9e59e80bb3f98f8ecfad27dc016cf9627fd3/cv-penicka.pdf"
               >
                 <span
@@ -189,10 +185,10 @@ const About = () => {
             </div>
             {/* Personal Informations Ends */}
             {/* Facts Starts */}
-            <div className="xl:basis-1/2 lg:basis-7/12 down-lg:basis-full down-lg:mt-50">
+            <div className=" lg:basis-5/12 down-lg:basis-full down-lg:mt-50">
               <div className="flex down-lg:-mx-15 flex-wrap">
                 {counters.map((counter) => (
-                  <div className="w-1/2 px-15" key={counter.id}>
+                  <div className="w-full px-15" key={counter.id}>
                     <div
                       className={`pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-${
                         dark ? "black-3" : "grey"

@@ -21,7 +21,7 @@ const Home = ({ authorImage, authorImageMobile }) => {
             {/* Mobile Image Starts */}
             <img
               src={authorImageMobile || "assets/img/dark-img-mobile.jpg"}
-              className="hidden down-lg:block xs:!hidden rounded-full w-270 h-270 mx-auto mb-25 border-4 border-solid border-black-3"
+              className="hidden down-lg:block rounded-full w-230 h-230 mx-auto mb-25 border-4 border-solid border-black-3"
               alt="my picture"
             />
             {/* Mobile Image Ends */}
@@ -34,10 +34,9 @@ const Home = ({ authorImage, authorImageMobile }) => {
                 Frontend Engineer
               </span>
             </h1>
-            <p className="font-Open-sans mt-15 mb-28 leading-lh-35 down-lg:mt-2.5 down-lg:mb-23 down-lg:text-fs-15 down-lg:leading-lh-30">
+            <p className="font-Open-sans mt-15 mb-28 leading-lh-35  down-lg:text-fs-15 down-lg:leading-lh-30">
               Senior Frontend Engineer specializing in JavaScript technologies,
               most notably Vue.js, Nuxt.js, React, Next.js and TypeScript.
-              <br />
               <br />
               Currently working on a freelance basis and open to new clients.
               Feel free to contact me with interesting project offers.

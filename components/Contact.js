@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
           <div className="flex down-lg:flex-col">
             {/* Contact Details Starts */}
-            <div className="w-1/3 down-lg:w-full px-16 xs:px-0">
+            <div className="w-1/3 down-lg:w-full px-25 down-sm:px-4">
               <h3 className="text-fs-26 xs:text-fs-21 mb-16 font-semibold uppercase">
                 Let's talk?
               </h3>
@@ -86,15 +86,8 @@ const Contact = () => {
                 business opportunities. Feel free to get in touch with me throuh
                 the channels below or the form on the right.
               </p>
-              <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
-                <i className="fa fa-envelope-open absolute left-0 top-10 text-fs-33 text-accent" />
-                <span className="block opacity-80 uppercase font-normal">
-                  mail me
-                </span>
-                petr.penicka@gmail.com
-              </div>
 
-              <ul className="-ml-5 pt-4 mb-48">
+              <ul className="-ml-5 pt-4 mt-24 mb-16">
                 {socials.map((social) => (
                   <li key={social.id} className="inline-block">
                     <a
@@ -110,6 +103,14 @@ const Contact = () => {
                   </li>
                 ))}
               </ul>
+
+              <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-40">
+                <i className="fa fa-envelope-open absolute left-0 top-10 text-fs-33 text-accent" />
+                <span className="block opacity-80 uppercase font-normal">
+                  mail me
+                </span>
+                petr.penicka@gmail.com
+              </div>
             </div>
             {/* Contact Details Ends */}
             {/* Contact Form Starts */}

@@ -38,6 +38,10 @@
   z-index: 222;
 }
 
+.slideshow nav {
+  z-index: 223;
+}
+
 .d-none {
   display: none;
 }
@@ -56,12 +60,12 @@
   z-index: 99;
   cursor: pointer;
 }
-@media only screen and (max-width: 991px) {
-  #showSwitcher {
-    top: 15px;
-    display: none !important;
-  }
+
+#showSwitcher {
+  top: 15px;
+  display: none !important;
 }
+
 @media screen and (max-width: 991px) {
   .dark-switch {
     top: 100px;
