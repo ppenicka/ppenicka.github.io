@@ -28,14 +28,13 @@ const bio = [
 const counters = [
   {
     id: 1,
-    title: 'years of <span className="block">tech industry experience</span>',
-    value: "15",
+    title: "years of experience in frontend engineering",
+    value: "5",
   },
   {
     id: 2,
-    title:
-      'years of <span className="block">frontend engineering experience</span>',
-    value: "5",
+    title: "years of experience in the tech industry",
+    value: "15",
   },
 ];
 
@@ -145,7 +144,7 @@ const About = () => {
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
           <div className="flex flex-row down-lg:flex-col">
             {/* Personal Informations Starts */}
-            <div className="xl:basis-2/3  down-lg:basis-full">
+            <div className="basis-2/3">
               <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-22  text-white font-semibold">
                 personal info
               </h3>
@@ -185,7 +184,7 @@ const About = () => {
             </div>
             {/* Personal Informations Ends */}
             {/* Facts Starts */}
-            <div className=" lg:basis-5/12 down-lg:basis-full down-lg:mt-50">
+            <div className="basis-1/3 down-lg:mt-50">
               <div className="flex down-lg:-mx-15 flex-wrap">
                 {counters.map((counter) => (
                   <div className="w-full px-15" key={counter.id}>
