@@ -3752,6 +3752,10 @@ video {
     margin-top: 18px;
   }
 
+  .xs\:mt-32 {
+    margin-top: 32px;
+  }
+
   .xs\:mt-8 {
     margin-top: 8px;
   }
