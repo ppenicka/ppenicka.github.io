@@ -141,7 +141,7 @@ const About = () => {
           normalTitle={"about"}
         />
         {/* Section Title Ends */}
-        <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
+        <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto xs:mt-18">
           <div className="flex flex-row down-lg:flex-col">
             {/* Personal Informations Starts */}
             <div className="basis-2/3">

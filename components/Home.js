@@ -26,7 +26,7 @@ const Home = ({ authorImage, authorImageMobile }) => {
             />
             {/* Mobile Image Ends */}
             {/* Informations Starts */}
-            <h1 className="text-fs-51 text-accent font-Poppins relative uppercase font-bold leading-lh-62 custom-md-2:text-fs-42 down-xl:pl-0 custom-md-2:leading-lh-52 down-md:text-fs-38 down-md:leading-lh-48 down-md:mt-29 down-md:mb-13 xs:text-fs-29 xs:leading-lh-39 xs:mt-18">
+            <h1 className="text-fs-51 text-accent font-Poppins relative uppercase font-bold leading-lh-62 custom-md-2:text-fs-42 down-xl:pl-0 custom-md-2:leading-lh-52 down-md:text-fs-38 down-md:leading-lh-48 down-md:mt-29 down-md:mb-13 xs:text-fs-29 xs:leading-lh-39 xs:mt-32">
               Petr Penicka
               <span
                 className={` block ${dark ? "text-white" : "text-black-6"}`}
