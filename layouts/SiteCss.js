@@ -1,12 +1,12 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { Fragment, useContext } from "react";
-const TunisCss = () => {
-  const { color } = useContext(TunisContext);
+const SiteCss = () => {
+  const { color } = useContext(SiteContext);
   return (
     <Fragment>
       <link rel="stylesheet" href={`/assets/css/skins/${color}.css`} />
     </Fragment>
   );
 };
-export default TunisCss;
+export default SiteCss;

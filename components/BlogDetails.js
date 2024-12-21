@@ -1,11 +1,11 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import SectionContainer from "@/layouts/SectionContainer";
 import { useContext } from "react";
 import SectionTitle from "./SectionTitle";
 
 const BlogDetails = ({ blog }) => {
-  const { dark } = useContext(TunisContext);
+  const { dark } = useContext(SiteContext);
   return (
     <SectionContainer id={"blog-details"}>
       <div className="w-full">

@@ -4,20 +4,20 @@ import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Home from "@/components/Home";
 import Portfolio from "@/components/Portfolio";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import Revealer from "@/layouts/Revealer";
-import TunisLayout from "@/layouts/TunisLayout";
+import SiteLayout from "@/layouts/SiteLayout";
 import { useContext, useEffect } from "react";
 
 const Page = () => {
-  const { darkToggle, changeColor } = useContext(TunisContext);
+  const { darkToggle, changeColor } = useContext(SiteContext);
   useEffect(() => {
     darkToggle();
     changeColor("green");
   }, []);
 
   return (
-    <TunisLayout>
+    <SiteLayout>
       {/* Main Content Starts */}
       <div className="w-full h-full pages overflow-hidden">
         {/* Home Starts */}
@@ -40,7 +40,7 @@ const Page = () => {
         {/* Blog Ends */}
       </div>
       <Revealer />
-    </TunisLayout>
+    </SiteLayout>
   );
 };
 export default Page;

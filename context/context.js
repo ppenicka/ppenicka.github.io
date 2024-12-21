@@ -3,7 +3,7 @@
 import { createContext, useCallback, useReducer } from "react";
 
 // Create Context
-const TunisContext = createContext();
+const SiteContext = createContext();
 
 // Type
 const type = {
@@ -77,7 +77,7 @@ const reducer = (state, action) => {
 };
 
 // Watson State
-const TunisState = ({ children }) => {
+const SiteState = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const changeNav = useCallback((value, toggleValue) => {
@@ -121,7 +121,7 @@ const TunisState = ({ children }) => {
 
   const { nav, toggle, color, direction, popup, blogs, dark } = state;
   return (
-    <TunisContext.Provider
+    <SiteContext.Provider
       value={{
         nav,
         changeNav,
@@ -138,9 +138,9 @@ const TunisState = ({ children }) => {
       }}
     >
       {children}
-    </TunisContext.Provider>
+    </SiteContext.Provider>
   );
 };
 
-export default TunisState;
-export { TunisContext };
+export default SiteState;
+export { SiteContext };

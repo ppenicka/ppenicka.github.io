@@ -1,8 +1,8 @@
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { useContext } from "react";
 
 const Popup = () => {
-  const { popup, popupToggle, dark } = useContext(TunisContext);
+  const { popup, popupToggle, dark } = useContext(SiteContext);
   return (
     <div className="portfolio">
       <div className="slideshow-open">

@@ -1,9 +1,9 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { useContext, useEffect, useState } from "react";
 
 const SectionContainer = ({ children, id }) => {
-  const { nav, direction } = useContext(TunisContext);
+  const { nav, direction } = useContext(SiteContext);
   const [navClass, setNavClass] = useState(`page--animate-${direction}`);
 
   useEffect(() => {

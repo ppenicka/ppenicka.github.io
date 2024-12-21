@@ -1,5 +1,5 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import SectionContainer from "@/layouts/SectionContainer";
 import { tunisUtility } from "@/utility";
 import { Fragment, useContext, useEffect, useState } from "react";
@@ -15,7 +15,7 @@ const Blog = () => {
     let list = document.querySelectorAll(".blog-list-item");
     setstate(tunisUtility.getPagination(list.length, sort));
   }, [active]);
-  const { blogs, changeNav, dark } = useContext(TunisContext);
+  const { blogs, changeNav, dark } = useContext(SiteContext);
 
   const [blogDetailsData, setBlogDetailsData] = useState(null);
 

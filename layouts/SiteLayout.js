@@ -3,14 +3,14 @@ import DayLight from "@/components/DayLight";
 import Popup from "@/components/Popup";
 import Preloader from "@/components/Preloader";
 import Switcher from "@/components/Switcher";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { tunisUtility } from "@/utility";
 import { useContext, useEffect } from "react";
 import Cursor from "./Cursor";
 import Header from "./Header";
 
-const TunisLayout = ({ children }) => {
-  const { direction, popup, dark } = useContext(TunisContext);
+const SiteLayout = ({ children }) => {
+  const { direction, popup, dark } = useContext(SiteContext);
   useEffect(() => {
     tunisUtility.customCursor();
   }, []);
@@ -36,4 +36,4 @@ const TunisLayout = ({ children }) => {
     </div>
   );
 };
-export default TunisLayout;
+export default SiteLayout;

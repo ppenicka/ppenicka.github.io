@@ -1,8 +1,8 @@
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { useContext } from "react";
 
 const DayLight = () => {
-  const { darkToggle, dark } = useContext(TunisContext);
+  const { darkToggle, dark } = useContext(SiteContext);
   return (
     <a
       href="#"

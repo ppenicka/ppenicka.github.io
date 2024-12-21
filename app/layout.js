@@ -5,8 +5,8 @@ import "@css/font-awesome.min.css";
 import "@css/style.css";
 import "./globals.css";
 // <!-- Live Style Switcher - demo only --;
-import TunisState from "@/context/context";
-import TunisCss from "@/layouts/TunisCss";
+import SiteState from "@/context/context";
+import SiteCss from "@/layouts/SiteCss";
 import "@css/styleswitcher.css";
 import { Open_Sans, Poppins } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -34,13 +34,13 @@ const fontFamily = `${open_sans.variable} ${poppins.variable}`;
 
 export default function RootLayout({ children }) {
   return (
-    <TunisState>
+    <SiteState>
       <html
         lang="en"
         className="overflow-x-hidden h-full js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
       >
         <head>
-          <TunisCss />
+          <SiteCss />
         </head>
         <body
           className={`${fontFamily} font-Poppins text-fs-16 font-medium leading-lh-1.6`}
@@ -49,6 +49,6 @@ export default function RootLayout({ children }) {
         </body>
         <GoogleAnalytics gaId="G-43GXZ5Y6F3" />
       </html>
-    </TunisState>
+    </SiteState>
   );
 }

@@ -4,11 +4,11 @@ import Contact from "@/components/Contact";
 import Home from "@/components/Home";
 import Portfolio from "@/components/Portfolio";
 import Revealer from "@/layouts/Revealer";
-import TunisLayout from "@/layouts/TunisLayout";
+import SiteLayout from "@/layouts/SiteLayout";
 
 const Page = () => {
   return (
-    <TunisLayout>
+    <SiteLayout>
       {/* Main Content Starts */}
       <div className="w-full h-full pages overflow-hidden">
         {/* Home Starts */}
@@ -31,7 +31,7 @@ const Page = () => {
         {/* Blog Ends */}
       </div>
       <Revealer />
-    </TunisLayout>
+    </SiteLayout>
   );
 };
 export default Page;

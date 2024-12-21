@@ -1,9 +1,9 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { useContext } from "react";
 
 const SectionTitle = ({ bigTitle, colorTitle, normalTitle }) => {
-  const { dark } = useContext(TunisContext);
+  const { dark } = useContext(SiteContext);
   return (
     <div className="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
       <h2

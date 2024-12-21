@@ -1,5 +1,5 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import { useContext, useState } from "react";
 const colors = [
   { id: 1, name: "purple", img: "purple" },
@@ -45,7 +45,7 @@ const directions = [
 
 const Switcher = () => {
   const [toggle, setToggle] = useState(false);
-  const { changeColor, changeDirection, direction } = useContext(TunisContext);
+  const { changeColor, changeDirection, direction } = useContext(SiteContext);
   return (
     <div className={`switcher_container ${toggle ? "switch_open" : ""}`}>
       <div id="switcher">

@@ -1,10 +1,10 @@
 "use client";
-import { TunisContext } from "@/context/context";
+import { SiteContext } from "@/context/context";
 import useWindowSize from "@/utility/useWindowSize";
 import { useContext, useEffect, useState } from "react";
 
 const Revealer = () => {
-  const { nav, direction } = useContext(TunisContext);
+  const { nav, direction } = useContext(SiteContext);
   const [navClass, setNavClass] = useState("");
   const { width, height } = useWindowSize();
   useEffect(() => {
