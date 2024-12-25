@@ -168,7 +168,8 @@ const About = () => {
               </div>
               <a
                 className="button group mt-35  overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
-                href="https://raw.githubusercontent.com/ppenicka/cv/74dd9e59e80bb3f98f8ecfad27dc016cf9627fd3/cv-penicka.pdf"
+                href="https://ppenicka.me/cv/cv-penicka.pdf"
+                target="_blank"
               >
                 <span
                   className={`relative z-20 text-${
