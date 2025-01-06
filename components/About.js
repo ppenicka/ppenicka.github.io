@@ -29,12 +29,12 @@ const counters = [
   {
     id: 1,
     title: "years of experience in frontend engineering",
-    value: "5",
+    value: new Date().getFullYear() - 2020,
   },
   {
     id: 2,
     title: "years of experience in the tech industry",
-    value: "15",
+    value: new Date().getFullYear() - 2008,
   },
 ];
 
