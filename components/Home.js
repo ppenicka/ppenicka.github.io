@@ -36,7 +36,7 @@ const Home = ({ authorImage, authorImageMobile }) => {
             </h1>
             <p className="font-Open-sans mt-15 mb-28 leading-lh-35  down-lg:text-fs-15 down-lg:leading-lh-30">
               Senior Frontend Engineer specializing in JavaScript technologies,
-              most notably Vue.js, Nuxt.js, React, Next.js and TypeScript.
+              mainly Vue.js, Nuxt.js, React, Next.js and TypeScript.
               <br />
               Currently working on a freelance basis and open to new clients.
               Feel free to contact me with interesting project offers.
