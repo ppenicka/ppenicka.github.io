@@ -17,9 +17,24 @@ const bio = [
   {
     id: 12,
     data: [
-      { id: 5, type: "Email", value: "petr.penicka@gmail.com" },
-      { id: 6, type: "LinkedIn", value: "linkedin.com/in/petr-penicka" },
-      { id: 7, type: "GitHub", value: "github.com/ppenicka" },
+      {
+        id: 5,
+        type: "Email",
+        value: "petr.penicka@gmail.com",
+        link: "mailto:petr.penicka@gmail.com",
+      },
+      {
+        id: 6,
+        type: "LinkedIn",
+        value: "linkedin.com/in/petr-penicka",
+        link: "https://www.linkedin.com/in/petr-penicka",
+      },
+      {
+        id: 7,
+        type: "GitHub",
+        value: "github.com/ppenicka",
+        link: "https://github.com/ppenicka",
+      },
       { id: 8, type: "Availability", value: "open to new clients" },
     ],
   },
@@ -157,9 +172,16 @@ const About = () => {
                   >
                     {item.data.map((bio) => (
                       <div key={bio.id}>
-                        <span className="opacity-80">{bio.type} : </span>
+                        <span className="opacity-80">{bio.type}: </span>
+
                         <span className="xs:block custom-md-2:block font-semibold">
-                          {bio.value}
+                          {bio.link ? (
+                            <a target="_blank" href={bio.link}>
+                              {bio.value}
+                            </a>
+                          ) : (
+                            bio.value
+                          )}
                         </span>
                       </div>
                     ))}
