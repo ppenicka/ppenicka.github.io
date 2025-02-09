@@ -348,6 +348,11 @@ menu {
   padding: 0;
 }
 
+.list-in-blog {
+  list-style: disc;
+  padding-left: 18px;
+}
+
 /*
 Reset default styling for dialogs.
 */

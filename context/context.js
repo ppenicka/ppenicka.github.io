@@ -26,12 +26,12 @@ const initialState = {
   blogs: [
     {
       id: 1,
-      author: "steve",
-      date: "09 December 2023",
-      tags: "wordpress, business, economy, design",
-      title: "How to Own Your Audience by Creating an Email List",
-      img: "/assets/img/blog/blog-post-1.jpg",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      author: "Petr Penicka",
+      date: "09 February 2025",
+      tags: "React, TypeScript, jQuery, refactoring, modernization",
+      title: "Lessons from Modernizing a Pre-React jQuery Codebase",
+      img: "/assets/img/blog/frontend-evolution.png",
+      desc: "In this blog post, I share my experience modernizing an old jQuery codebase—from removing jQuery and adopting TypeScript to refactoring incrementally for maintainability.",
     },
   ],
   dark: true,
