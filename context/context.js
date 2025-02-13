@@ -1,6 +1,8 @@
 "use client";
 
 import { createContext, useCallback, useReducer } from "react";
+import { Blog1 } from "../components/Blog1";
+import { Blog2 } from "../components/Blog2";
 
 // Create Context
 const SiteContext = createContext();
@@ -27,11 +29,22 @@ const initialState = {
     {
       id: 1,
       author: "Petr Penicka",
-      date: "09 February 2025",
+      date: "09 January 2025",
       tags: "React, TypeScript, jQuery, refactoring, modernization",
-      title: "Lessons from Modernizing a Pre-React jQuery Codebase",
+      title: "Lessons from The Past: Modernizing a Pre-React jQuery Codebase",
       img: "/assets/img/blog/frontend-evolution.png",
       desc: "In this blog post, I share my experience modernizing an old jQuery codebase—from removing jQuery and adopting TypeScript to refactoring incrementally for maintainability.",
+      contentComponent: Blog1,
+    },
+    {
+      id: 2,
+      author: "Petr Penicka",
+      date: "13 February 2025",
+      tags: "React, Vue.js, Next.js, Nuxt.js",
+      title: "A Foot in Both Camps: My Experience With React and Vue.js",
+      img: "/assets/img/blog/react-vue.png",
+      desc: "Ever wondered how developers switch between React and Vue.js? In this article, I share my journey across both frameworks, showing that once you’ve mastered the fundamentals in one, you’re already halfway to mastering the other.",
+      contentComponent: Blog2,
     },
   ],
   dark: true,
