@@ -3,6 +3,7 @@
 import { createContext, useCallback, useReducer } from "react";
 import { Blog1 } from "../components/Blog1";
 import { Blog2 } from "../components/Blog2";
+import { Blog3 } from "../components/Blog3";
 
 // Create Context
 const SiteContext = createContext();
@@ -29,7 +30,7 @@ const initialState = {
     {
       id: 1,
       author: "Petr Penicka",
-      date: "09 January 2025",
+      date: "8 January 2025",
       tags: "React, TypeScript, jQuery, refactoring, modernization",
       title: "Lessons from The Past: Modernizing a Pre-React jQuery Codebase",
       img: "/assets/img/blog/frontend-evolution.png",
@@ -39,12 +40,23 @@ const initialState = {
     {
       id: 2,
       author: "Petr Penicka",
-      date: "13 February 2025",
+      date: "5 February 2025",
       tags: "React, Vue.js, Next.js, Nuxt.js",
       title: "A Foot in Both Camps: My Experience With React and Vue.js",
       img: "/assets/img/blog/react-vue.png",
       desc: "Ever wondered how developers switch between React and Vue.js? In this article, I share my journey across both frameworks, showing that once you’ve mastered the fundamentals in one, you’re already halfway to mastering the other.",
       contentComponent: Blog2,
+    },
+    {
+      id: 3,
+      author: "Petr Penicka",
+      date: "13 February 2025",
+      tags: "freelance, remote work, productivity, work-life balance",
+      title:
+        "One Year of Freelancing: Lessons in Flexibility, Growth and Independence",
+      img: "/assets/img/blog/home-office.png",
+      desc: "A year into freelancing, I’ve unlocked new skills, greater flexibility, and a whole new way of thinking. Here’s what I’ve learned outside the world of 9-to-5.",
+      contentComponent: Blog3,
     },
   ],
   dark: true,
