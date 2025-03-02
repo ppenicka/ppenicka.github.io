@@ -6,6 +6,18 @@ import SectionTitle from "./SectionTitle";
 
 const items = [
   {
+    id: 6,
+    title: "gAppointments Time Zones",
+    type: "img",
+    src: "",
+    img: "assets/img/projects/gappointments-timezones.png",
+    project:
+      "WordPress plugin to customize functionality of existing gAppointments plugin, adapting it to the needs of the client. Instead of displaying appointment times in a fixed time-zone, it displays them in the user's local time-zone, and sends the time zone choice to the backend together with the rest of appointment data.",
+    client: "Herrmann, Huebner & Partner Insurance Broker OÜ",
+    langages: "WordPress, JavaScript, jQuery, moment.js",
+    previewLink: "https://nomads.insure",
+  },
+  {
     id: 5,
     title: "Pura Design",
     type: "img",
