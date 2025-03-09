@@ -20,7 +20,7 @@ const SiteLayout = ({ children }) => {
         dark ? "black" : "white"
       } text-${
         dark ? "white" : "black-6"
-      } relative w-full h-full overflow-hidden anim--effect-3 animation-${direction}`}
+      } relative w-full h-full overflow-hidden anim--effect animation-${direction}`}
     >
       <Preloader />
       {popup && <Popup />}
