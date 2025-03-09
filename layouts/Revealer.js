@@ -13,7 +13,7 @@ const Revealer = () => {
     }, 100);
     setTimeout(() => {
       setNavClass("");
-    }, 1500);
+    }, 1600);
   }, [nav]);
   const directionStyle = (direction) => {
     const pageDiagonal = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
