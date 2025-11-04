@@ -6,6 +6,30 @@ import SectionTitle from "./SectionTitle";
 
 const items = [
   {
+    id: 8,
+    title: "Stadia Maps Dashboard",
+    type: "img",
+    src: "",
+    img: "assets/img/projects/stadia-dashboard.png",
+    project:
+      "The original dashboard consisted of three separate applications, one being Vue 3, another Vue 2, and the third one Django. I have refactored it to a single application using Nuxt 3 and an up-to-date stack.",
+    client: "Stadia Maps",
+    langages: "Vue.js, Django, Bootstrap, TypeScript",
+    previewLink: "https://stadiamaps.com",
+  },
+  {
+    id: 7,
+    title: "stadiamaps.com",
+    type: "img",
+    src: "",
+    img: "assets/img/projects/stadiamaps-com.png",
+    project:
+      "My work on stadiamap.com has included implementing full-site search using Fuse.js, implementing complex pricing calculators, converting multiple hard-coded pages to Nuxt Content, and more.",
+    client: "Stadia Maps",
+    langages: "Nuxt.js, TypeScript, Bulma, Fuse.js",
+    previewLink: "https://stadiamaps.com",
+  },
+  {
     id: 6,
     title: "gAppointments Time Zones",
     type: "img",
