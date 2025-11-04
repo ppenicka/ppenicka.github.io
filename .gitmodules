@@ -1,0 +1,3 @@
+[submodule "add-ribbon-source"]
+	path = add-ribbon-source
+	url = https://github.com/ppenicka/add-ribbon.git

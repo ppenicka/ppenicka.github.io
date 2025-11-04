@@ -5,8 +5,9 @@
   "homepage": "https://ppenicka.me",
   "scripts": {
     "compileCss": "tailwindcss -i ./public/build/tailwind.css -o ./public/assets/css/style.css --watch",
+    "build:ribbon": "cd add-ribbon-source && yarn install && yarn build && cd .. && rm -rf public/add-ribbon && cp -r add-ribbon-source/dist public/add-ribbon",
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run build:ribbon && next build",
     "postbuild": "next-sitemap",
     "deploy": "npm run build && gh-pages -d out --nojekyll",
     "start": "next start",

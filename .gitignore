@@ -42,3 +42,6 @@ next-env.d.ts
 # sitemap
 public/sitemap.xml
 public/sitemap-0.xml
+
+# Vue app build output (generated from submodule)
+public/add-ribbon
