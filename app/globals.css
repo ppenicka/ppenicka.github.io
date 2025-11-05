@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .switcher_container #switcher {
   left: -500px;
   transition: 0.3s all;
