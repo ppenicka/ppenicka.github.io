@@ -43,7 +43,7 @@ const bio = [
 const counters = [
   {
     id: 1,
-    title: "years of experience in frontend engineering",
+    title: "years of experience in software engineering",
     value: new Date().getFullYear() - 2020,
   },
   {

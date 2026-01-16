@@ -31,11 +31,11 @@ const Home = ({ authorImage, authorImageMobile }) => {
               <span
                 className={` block ${dark ? "text-white" : "text-black-6"}`}
               >
-                Frontend Engineer
+                Software Engineer
               </span>
             </h1>
             <p className="font-Open-sans mt-15 mb-28 leading-lh-35  down-lg:text-fs-15 down-lg:leading-lh-30">
-              Senior Frontend Engineer specializing in JavaScript technologies,
+              Senior Software Engineer specializing in JavaScript technologies,
               mainly Vue.js, Nuxt.js, React, Next.js and TypeScript.
               <br />
               Currently working on a freelance basis and open to new clients.

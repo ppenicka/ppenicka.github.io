@@ -25,9 +25,9 @@ const open_sans = Open_Sans({
 });
 
 export const metadata = {
-  title: "Petr Penicka - Frontend Engineer",
+  title: "Petr Penicka - Software Engineer",
   description:
-    "Professional portfolio of Petr Penicka, a freelance frontend engineer specialized in JavaScript technologies.",
+    "Professional portfolio of Petr Penicka, a freelance software engineer specialized in JavaScript technologies.",
 };
 
 const fontFamily = `${open_sans.variable} ${poppins.variable}`;
